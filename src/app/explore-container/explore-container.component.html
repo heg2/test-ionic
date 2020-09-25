@@ -1,5 +1,7 @@
 <div id="container">
   <strong>{{ name }}</strong>
   <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  <ion-button (click)="login()">LOGIN</ion-button>
+  <ion-button (click)="login()" *ngIf="!isLoggedIn">LOGIN</ion-button>
+  <ion-button (click)="logout()" *ngIf="isLoggedIn">LOGOUT</ion-button>
+   <ion-button (click)="createResource()" [disabled]="!isLoggedIn">CREATE RESOURCE</ion-button>
 </div>
