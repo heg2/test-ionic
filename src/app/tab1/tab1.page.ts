@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IonicOnFhirService } from '@i4mi/ionic-on-fhir';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private ionicOnFhir: IonicOnFhirService) {
+      this.ionicOnFhir.initIonicOnFhir('http://test.midata.coop', 'midemodev');
+  }
 
 }
