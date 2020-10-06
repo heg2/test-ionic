@@ -3,4 +3,6 @@ Assuming you have node installed and working and your android / ios simulator se
 
 Just clone this repo with `git clone https://github.com/heg2/test-ionic`. Make sure you're in the directory test-ionic and run 'npm i' for installing the dependencies. 
 
-After this, you can run the application with `ionic cordova run android` or `ionic cordova run ios`
+After this, you can run the application with `ionic cordova run android` or `ionic cordova run ios`.
+
+See https://github.com/i4mi/fhir-wrappers.ts/tree/master/ionic for information about the IONIC on FHIR wrapper.
